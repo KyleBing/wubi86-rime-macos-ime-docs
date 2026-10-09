@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>玫枫五笔 · 痛点解决</title>
+  <meta name="description" content="各端玫枫五笔都会有的能力：沿用 wubi86-rime 方案，快捷键造词，词库按修订号自动同步。">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="index.html">
+      <img src="img/logo.png" alt="">
+      <span>玫枫五笔</span>
+    </a>
+    <nav class="nav">
+      <a href="macos.html">macOS</a>
+      <a href="ios.html">iOS</a>
+      <a href="windows.html">Windows</a>
+      <a href="android.html">Android</a>
+      <a class="nav-pain is-current" href="pain.html">痛点解决</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="wrap hero">
+      <div>
+        <p class="kicker">各端共用 · 独立于系统页面</p>
+        <h1>Rime 五笔用久了会烦的地方，在这里处理。</h1>
+        <p class="lead">macOS、iOS，以及以后的 Windows、Android，输入引擎都是 librime，方案都是 <a href="https://github.com/KyleBing/rime-wubi86-jidian">rime-wubi86-jidian</a>。这一页只写大家都会有的能力。某个系统怎么摆候选、怎么装，去对应的系统页。</p>
+      </div>
+      <div class="stage" data-typing>
+        <div class="stage-top">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>同一套编码，各端上屏方式相同</span>
+        </div>
+        <div class="stage-doc">
+          <p><span data-text></span><span class="caret" aria-hidden="true"></span></p>
+          <p class="preedit"><span data-code></span></p>
+          <div class="cand" data-cands hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>都会有的功能</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>还是原来的五笔方案</h3>
+            <p>方案 id 是 wubi86_jidian，码表是 86 极点。不另做一套编码，也不靠 Lua 改候选。四码唯一时自动上屏，date 这种多项候选不会自动上。</p>
+          </article>
+          <article class="card">
+            <h3>快捷键自造词</h3>
+            <p>不用打开词库文件再部署。Mac 上默认是 Control + Option + N；iOS 在键盘里直接造。选中的文字或刚上屏的词会填进去，编码按五笔规则生成，写完马上能打。</p>
+          </article>
+          <article class="card">
+            <h3>词库自动同步</h3>
+            <p>和码表助手、其他端共用 portal 账号。先查云端修订号，词库没变化就不再整份下载。本地删掉、云端没改过的词不会被加回来。推送冲突会重新合并再推一次。</p>
+          </article>
+          <article class="card">
+            <h3>用户词和主码表分开</h3>
+            <p>自造词进用户词，按分组管理。主码表文件不动。同编码的词会标出来自用户词、扩展词库还是主词库。</p>
+          </article>
+          <article class="card">
+            <h3>标点由输入法处理</h3>
+            <p>可以改每一键打出什么，并选择直接上屏或先进入候选。Mac 和 iOS 用同一套标点设置。</p>
+          </article>
+          <article class="card">
+            <h3>日期、时间和星期</h3>
+            <p>输入 date、time、week，候选来自当时的系统时间。格式从「2026-10-09」到时间戳都有，用数字键选。</p>
+          </article>
+          <article class="card">
+            <h3>拼音反查</h3>
+            <p>不会拆的字，用 z 加拼音反查。例如不知道「玫」时打 zmei，再从候选里选。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <div>方案 <a href="https://github.com/KyleBing/rime-wubi86-jidian">rime-wubi86-jidian</a> · 引擎 <a href="https://github.com/rime/librime">librime</a></div>
+    <div><a href="mailto:kylebing@163.com">kylebing@163.com</a> · QQ 群 878750538</div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

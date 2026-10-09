@@ -3,166 +3,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>玫枫五笔 · macOS 五笔输入法</title>
-  <meta name="description" content="玫枫五笔是 macOS 原生五笔输入法。86 极点码表，随手造词，直接打出当前日期和时间。下载 1.0.2。">
+  <title>玫枫五笔 · 基于 wubi86-rime 的五笔输入法</title>
+  <meta name="description" content="玫枫五笔沿用 rime-wubi86-jidian 方案，专门处理 Rime 五笔在日常使用里的痛点。macOS、iOS 已可用，Windows 与 Android 为后续版本。">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="wrap top">
-    <a class="brand" href="#top">
+    <a class="brand" href="index.html">
       <img src="img/logo.png" alt="">
       <span>玫枫五笔</span>
     </a>
     <nav class="nav">
-      <a class="hide-sm" href="#features">功能</a>
-      <a class="hide-sm" href="#install">安装</a>
-      <a class="hide-sm" href="https://kylebing.cn/wubi/macos/">使用说明</a>
-      <a class="btn btn-primary" href="#download">下载 1.0.2</a>
+      <a href="macos.html">macOS</a>
+      <a href="ios.html">iOS</a>
+      <a href="windows.html">Windows</a>
+      <a href="android.html">Android</a>
+      <a class="nav-pain" href="pain.html">痛点解决</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main>
     <section class="wrap hero">
       <div>
-        <p class="kicker">macOS 原生输入法 · 1.0.2</p>
-        <h1>打五笔，<br>也打得出今天。</h1>
-        <p class="lead">86 极点码表。人名和项目名随手造进去，<kbd>date</kbd> <kbd>time</kbd> <kbd>week</kbd> 直接变成当前日期和时间。候选栏跟着系统明暗走，快捷键按五笔习惯来。</p>
+        <p class="kicker">wubi86_jidian · 同一套五笔</p>
+        <h1>原来的五笔方案，<br>少一些日常的别扭。</h1>
+        <p class="lead">玫枫五笔直接使用 <a href="https://github.com/KyleBing/rime-wubi86-jidian">rime-wubi86-jidian</a>（原 wubi86-rime 方案）。编码还是 86 极点，主要补上 Rime 五笔在造词、同步、候选和标点上不好用的地方。各系统的输入法分开做，这些能力是共用的。</p>
         <div class="actions">
-          <a class="btn btn-primary" href="download/MeifengWubi-1.0.2.dmg" download="玫枫五笔-1.0.2.dmg">下载 macOS 版</a>
-          <a class="btn btn-ghost" href="https://kylebing.cn/wubi/macos/">查看使用说明</a>
+          <a class="btn btn-primary" href="macos.html">下载 macOS 版</a>
+          <a class="btn btn-ghost" href="pain.html">看各端都会有的功能</a>
         </div>
-        <p class="meta">
-          <span>13.1 MB</span>
-          <span>macOS 13 及以上</span>
-          <span>Apple 芯片与 Intel</span>
-          <span>2026-10-09</span>
-        </p>
       </div>
-      <aside class="hero-card">
-        <img src="img/logo.png" alt="玫枫五笔枫叶标志">
-        <strong>玫枫五笔</strong>
-        <p>拖进「应用程序」即可安装。<br>输入引擎 librime。</p>
-      </aside>
-    </section>
-
-    <section class="section" id="features">
-      <div class="wrap">
-        <h2>输入时用得上的</h2>
-        <p class="sub">不改你原来的五笔手感，把造词、时间和候选外观放在手边。</p>
-        <div class="grid">
-          <article class="card">
-            <h3>自造词</h3>
-            <p>默认 Control + Option + N 打开造词窗口。选中的文字，或两分钟内刚上屏的词，会自动填入。编码按五笔规则生成，同编码的词会标出来自哪个词库。</p>
-          </article>
-          <article class="card">
-            <h3>日期与时间</h3>
-            <p>输入 <kbd>date</kbd>、<kbd>time</kbd>、<kbd>week</kbd>，候选就是当前日期、时间和星期。从「2026-09-28」到时间戳，用数字键选取。</p>
-          </article>
-          <article class="card">
-            <h3>按五笔习惯按键</h3>
-            <p>空格上屏，数字 <kbd>1</kbd>–<kbd>9</kbd> 选词，单按 Shift 切换中英。翻页键和 <kbd>;</kbd> <kbd>'</kbd> 选二三候选可以在设置里改。</p>
-          </article>
-          <article class="card">
-            <h3>候选外观</h3>
-            <p>横排或竖排，明暗两套颜色，首位可以单独高亮。也可以只显示圆点，或完全藏起候选条盲打。皮肤能导出，换一台机器再导入。</p>
-          </article>
-          <article class="card">
-            <h3>词库与同步</h3>
-            <p>用户词按分组管理。登录后和码表助手、iOS 共用账号，可以对比、合并或覆盖。没变化时只查修订号，不会把删掉的词拉回来。</p>
-          </article>
-          <article class="card">
-            <h3>标点与反查</h3>
-            <p>标点由输入法处理，每一键的输出和上屏方式都能改。不会拆的字，用 <kbd>z</kbd> 加拼音反查。</p>
-          </article>
+      <div>
+        <div class="stage" data-typing>
+          <div class="stage-top">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>编码留在光标下，候选在旁边</span>
+          </div>
+          <div class="stage-doc">
+            <p><span data-text></span><span class="caret" aria-hidden="true"></span></p>
+            <p class="preedit"><span data-code></span></p>
+            <div class="cand" data-cands hidden></div>
+          </div>
         </div>
+        <p class="stage-note">示意在打「中国」（khlg），接着打 date 选出日期。实际上屏取当时的系统时间。</p>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <h2>造词和日期长这样</h2>
-        <p class="sub">造词窗口不抢当前软件的前台。日期候选来自当时的系统时间。</p>
-        <div class="figures">
-          <figure>
-            <img src="img/quick-add.svg" alt="添加自造词窗口，词条为玫枫五笔，编码为 gsgt">
-            <figcaption>选中文字后按 Control + Option + N，编码自动填上，也可以改。</figcaption>
-          </figure>
-          <figure>
-            <img src="img/date-bar.svg" alt="输入 date 后的候选条，第一项是 2026-09-28">
-            <figcaption>date 的第一页是常用日期，后面还有带时间的格式。</figcaption>
-          </figure>
-          <figure>
-            <img src="img/time-bar.svg" alt="输入 time 后的候选条，含时间和时间戳">
-            <figcaption>time 给出时分秒和时间戳，适合填日志。</figcaption>
-          </figure>
+        <h2>按系统分开</h2>
+        <p class="sub">每个系统一张页面，只写这个输入法在该系统上的做法。词库自动同步和快捷键造词写在「痛点解决」里，各端都有。</p>
+        <div class="platforms">
+          <a class="platform" href="macos.html">
+            <span class="tag">1.0.2 · 可下载</span>
+            <strong>macOS</strong>
+            <p>系统输入法。候选条不抢焦点，编码以下划线留在插入点。</p>
+          </a>
+          <a class="platform" href="ios.html">
+            <span class="tag">1.0.1</span>
+            <strong>iOS</strong>
+            <p>仿系统键盘。字母、数字、符号三页，造词和词库要开完全访问。</p>
+          </a>
+          <a class="platform" href="windows.html">
+            <span class="tag soon">后续版本</span>
+            <strong>Windows</strong>
+            <p>会单独做一版，方案仍是 wubi86_jidian。安装包随后放在 Windows 页。</p>
+          </a>
+          <a class="platform" href="android.html">
+            <span class="tag soon">可能会做</span>
+            <strong>Android</strong>
+            <p>如果做，也是同一套方案和同一批共用能力，页面先留在这里。</p>
+          </a>
         </div>
-      </div>
-    </section>
-
-    <section class="section" id="install">
-      <div class="wrap">
-        <h2>安装</h2>
-        <p class="sub">这是系统输入法。装进「应用程序」之后，还要在系统设置里启用一次。</p>
-        <ol class="steps">
-          <li>打开 DMG，把「玫枫五笔」拖到「应用程序」。</li>
-          <li>运行「玫枫五笔」，点「安装 / 更新输入法」。</li>
-          <li>系统设置 → 键盘 → 输入法，添加简体中文里的「玫枫五笔」。</li>
-          <li>列表里还没有时，注销一次再看。单独按 Shift 确认是中文模式。</li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section" id="download">
-      <div class="wrap">
-        <h2>下载</h2>
-        <p class="sub">macOS 安装包放在这个仓库里。Windows 版会用单独的下载页。</p>
-        <div class="downloads">
-          <article class="dl dl-main">
-            <p class="os">macOS</p>
-            <h3>1.0.2</h3>
-            <p>通用二进制。打开后拖到「应用程序」。若系统提示来自未识别的开发者，到系统设置里允许打开这一次。</p>
-            <div class="actions">
-              <a class="btn btn-primary" href="download/MeifengWubi-1.0.2.dmg" download="玫枫五笔-1.0.2.dmg">下载 玫枫五笔-1.0.2.dmg</a>
-            </div>
-            <p class="hash">SHA256 ae229d47c37f1f199e65e25f832c59623baabc775132386fa7014b93543cb8e2</p>
-          </article>
-          <article class="dl">
-            <p class="os">Windows</p>
-            <h3 class="soon">即将提供</h3>
-            <p class="soon">Windows 版会单独发布，不占用这个 macOS 下载页。功能对齐之后再给出安装包地址。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <h2>这个版本</h2>
-        <ul class="log">
-          <li>
-            <strong>1.0.2</strong>
-            <span>2026-10-09 · 输入法菜单不再占用 ⌘,，各 App 仍用这个键打开自己的设置。</span>
-          </li>
-          <li>
-            <strong>1.0.1</strong>
-            <span>2026-09-30 · 同步先查云端修订号；本地删掉且云端没改过的词不会被加回来；标点改由输入法处理。</span>
-          </li>
-        </ul>
       </div>
     </section>
   </main>
 
   <footer class="wrap foot">
     <div>
-      输入引擎 <a href="https://github.com/rime/librime">librime</a>
-      · 码表 <a href="https://github.com/KyleBing/rime-wubi86-jidian">rime-wubi86-jidian</a>
+      方案 <a href="https://github.com/KyleBing/rime-wubi86-jidian">rime-wubi86-jidian</a>
+      · 引擎 <a href="https://github.com/rime/librime">librime</a>
     </div>
     <div>
       <a href="mailto:kylebing@163.com">kylebing@163.com</a>
       · QQ 群 878750538
     </div>
   </footer>
+  <script src="js/site.js"></script>
 </body>
 </html>
