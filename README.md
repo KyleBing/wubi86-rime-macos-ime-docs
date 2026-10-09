@@ -1,16 +1,28 @@
-# 玫枫五笔下载页
+# 玫枫五笔
 
-基于 [rime-wubi86-jidian](https://github.com/KyleBing/rime-wubi86-jidian)（原 wubi86-rime 方案）。各系统分开介绍，共用能力在痛点解决页。
+基于 [rime-wubi86-jidian](https://github.com/KyleBing/rime-wubi86-jidian) 的说明和下载站，用 VitePress 构建。
 
 | 页面 | 内容 |
 | --- | --- |
-| `index.html` | 方案说明、打字示意、系统入口 |
-| `macos.html` | macOS 输入法，安装包 1.0.2 |
-| `ios.html` | iOS 键盘，当前 1.0.1 |
-| `windows.html` | Windows 后续版本 |
-| `android.html` | Android 可能会做 |
-| `pain.html` | 各端都会有的造词、同步、标点和日期 |
+| `docs/index.md` | 首页和打字示意 |
+| `docs/macos.md` | macOS 输入法与 1.0.2 安装包 |
+| `docs/ios.md` | iOS 键盘 |
+| `docs/windows.md` | Windows 后续版本 |
+| `docs/android.md` | Android 可能会做 |
+| `docs/pain.md` | 各端都会有的造词、同步、标点和日期 |
+| `docs/guide/` | 从 macOS 输入法仓库迁来的使用说明 |
 
-macOS 安装包：`download/MeifengWubi-1.0.2.dmg`
+```bash
+npm install
+npm run docs:dev
+```
 
-推到 `main` 后，GitHub Actions 会把站点部署到 GitHub Pages。
+推到 `main` 后，GitHub Actions 会构建并部署到 GitHub Pages。
+
+同步到线上网站：
+
+```bash
+./scripts/update_site.sh
+```
+
+脚本会构建站点并放到 `https://kylebing.cn/wubi/`，同时删掉旧的 `/var/www/html/wubi/macos`。
