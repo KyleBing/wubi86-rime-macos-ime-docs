@@ -14,18 +14,18 @@ type Frame = {
   hold: number
 }
 
-// 先打「中国」，再打 date 上屏一种日期写法。
+// 先打「五笔」（ggtt），再打 date 上屏一种日期写法。
 const frames: Frame[] = [
-  { text: '', code: 'k', cands: [], hold: 420 },
-  { text: '', code: 'kh', cands: [], hold: 420 },
-  { text: '', code: 'khl', cands: [], hold: 420 },
-  { text: '', code: 'khlg', cands: ['中国'], hold: 2200 },
-  { text: '中国', code: '', cands: [], hold: 900 },
-  { text: '中国', code: 'd', cands: [], hold: 320 },
-  { text: '中国', code: 'da', cands: [], hold: 320 },
-  { text: '中国', code: 'dat', cands: [], hold: 320 },
-  { text: '中国', code: 'date', cands: ['2026-10-09', '2026/10/09', '2026年10月9日', '10月9日'], hold: 2400 },
-  { text: '中国2026-10-09', code: '', cands: [], hold: 1200 }
+  { text: '', code: 'g', cands: [], hold: 420 },
+  { text: '', code: 'gg', cands: [], hold: 420 },
+  { text: '', code: 'ggt', cands: [], hold: 420 },
+  { text: '', code: 'ggtt', cands: ['五笔'], hold: 2200 },
+  { text: '五笔', code: '', cands: [], hold: 900 },
+  { text: '五笔', code: 'd', cands: [], hold: 320 },
+  { text: '五笔', code: 'da', cands: [], hold: 320 },
+  { text: '五笔', code: 'dat', cands: [], hold: 320 },
+  { text: '五笔', code: 'date', cands: ['2026-10-09', '2026/10/09', '2026年10月9日', '10月9日'], hold: 2400 },
+  { text: '五笔2026-10-09', code: '', cands: [], hold: 1200 }
 ]
 
 const text = ref('')
@@ -117,7 +117,7 @@ onUnmounted(() => {
         </div>
       </div>
     </div>
-    <p class="hint">示意在打「中国」（khlg），接着打 date。实际上屏取当时的系统时间。</p>
+    <p class="hint">示意在打「五笔」（ggtt），接着打 date。实际上屏取当时的系统时间。</p>
   </div>
 </template>
 

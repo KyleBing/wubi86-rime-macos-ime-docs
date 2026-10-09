@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 玫枫五笔
   text: 原来的五笔方案，少一些日常的别扭。
-  tagline: 直接使用 rime-wubi86-jidian（原 wubi86-rime）。编码还是 86 极点。各系统的输入法分开做，造词、同步、标点和日期是共用的。
+  tagline: 直接使用 rime-wubi86-jidian 编码还是 86 极点。各系统的输入法分开做，造词、同步、标点和日期是共用的。
   image:
     src: /logo.png
     alt: 玫枫五笔
